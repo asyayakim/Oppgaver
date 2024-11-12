@@ -4,4 +4,5 @@ using Oppgaver;
 
 var oppgave315C = new Oppgave315C();
 oppgave315C.Run();
-// ug
+var oppgave315E = new Oppgave315E();
+oppgave315E.Run();
