@@ -7,4 +7,99 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include="Oppgave315G\.gitignore" />
+      <Content Include="Oppgave315G\.git\COMMIT_EDITMSG" />
+      <Content Include="Oppgave315G\.git\config" />
+      <Content Include="Oppgave315G\.git\description" />
+      <Content Include="Oppgave315G\.git\FETCH_HEAD" />
+      <Content Include="Oppgave315G\.git\HEAD" />
+      <Content Include="Oppgave315G\.git\hooks\applypatch-msg.sample" />
+      <Content Include="Oppgave315G\.git\hooks\commit-msg.sample" />
+      <Content Include="Oppgave315G\.git\hooks\fsmonitor-watchman.sample" />
+      <Content Include="Oppgave315G\.git\hooks\post-update.sample" />
+      <Content Include="Oppgave315G\.git\hooks\pre-applypatch.sample" />
+      <Content Include="Oppgave315G\.git\hooks\pre-commit.sample" />
+      <Content Include="Oppgave315G\.git\hooks\pre-merge-commit.sample" />
+      <Content Include="Oppgave315G\.git\hooks\pre-push.sample" />
+      <Content Include="Oppgave315G\.git\hooks\pre-rebase.sample" />
+      <Content Include="Oppgave315G\.git\hooks\pre-receive.sample" />
+      <Content Include="Oppgave315G\.git\hooks\prepare-commit-msg.sample" />
+      <Content Include="Oppgave315G\.git\hooks\push-to-checkout.sample" />
+      <Content Include="Oppgave315G\.git\hooks\update.sample" />
+      <Content Include="Oppgave315G\.git\index" />
+      <Content Include="Oppgave315G\.git\info\exclude" />
+      <Content Include="Oppgave315G\.git\logs\HEAD" />
+      <Content Include="Oppgave315G\.git\logs\refs\heads\main" />
+      <Content Include="Oppgave315G\.git\logs\refs\remotes\origin\HEAD" />
+      <Content Include="Oppgave315G\.git\logs\refs\remotes\origin\main" />
+      <Content Include="Oppgave315G\.git\objects\2a\f500bbe9f27214e7f61d59d6f6a74e4bbb781d" />
+      <Content Include="Oppgave315G\.git\objects\2c\04be410af0e9764414c5d23c90d7f486998b0a" />
+      <Content Include="Oppgave315G\.git\objects\2f\4fc77656e2d50b711e1c2707f14b6d7a609e20" />
+      <Content Include="Oppgave315G\.git\objects\37\51555cbd32d09340c8cb7b75ce8311c4330054" />
+      <Content Include="Oppgave315G\.git\objects\38\f5ce6438633bbed01a2190902734d4c02cc4c0" />
+      <Content Include="Oppgave315G\.git\objects\3d\cd2f64cc113c07d34a2ca11a9226ea3ab2e390" />
+      <Content Include="Oppgave315G\.git\objects\54\b656ed273fdfb664617f72a029b659225b9f97" />
+      <Content Include="Oppgave315G\.git\objects\60\b17e63b0231a6d489c0965d4e520d8b64d41b1" />
+      <Content Include="Oppgave315G\.git\objects\6f\cec4153a4cd78e1fb4a6a73a8988c1034d9ff3" />
+      <Content Include="Oppgave315G\.git\objects\76\bfbb590d1a807697e8f224523715d5f2542c79" />
+      <Content Include="Oppgave315G\.git\objects\7b\08163cebc50fb3e777eea4881b68fcebc10590" />
+      <Content Include="Oppgave315G\.git\objects\7e\bb2a70d631db7a2fc7ec782dc236b74a7543fc" />
+      <Content Include="Oppgave315G\.git\objects\7f\a43e9eb79ca6b8049e23d4e7e06916bc5882a3" />
+      <Content Include="Oppgave315G\.git\objects\8e\d805ffddbe6a89da8c4676dbc02fc3bfac4579" />
+      <Content Include="Oppgave315G\.git\objects\94\a25f7f4cb416c083d265558da75d457237d671" />
+      <Content Include="Oppgave315G\.git\objects\ad\d57be707d1a627fd960286263733b8f2df2dcb" />
+      <Content Include="Oppgave315G\.git\objects\b1\415acdc5c805d9d07f81121f75ebba2cbf9506" />
+      <Content Include="Oppgave315G\.git\objects\b6\3b642cfb4254fc0f7058903abc5b481895c4ef" />
+      <Content Include="Oppgave315G\.git\objects\b6\73f04f35611ebdb14cd123bb79bd0d97df3fb3" />
+      <Content Include="Oppgave315G\.git\objects\b8\1423619e6eabd9089cf0b46f3c93c47143231a" />
+      <Content Include="Oppgave315G\.git\objects\c1\43ee9ff974c4d62525e5da8adc9530ac319fc6" />
+      <Content Include="Oppgave315G\.git\objects\ca\5a4c005e1b96cb10f43b71f8ca5e53b9840fa2" />
+      <Content Include="Oppgave315G\.git\objects\d1\45f1716894ab25eba576d213c85e11369fbbc0" />
+      <Content Include="Oppgave315G\.git\objects\d8\8200d963f3b4b39fbbba3bf2bfe4526d53bccd" />
+      <Content Include="Oppgave315G\.git\objects\ee\aa64c58e82e13fbf3b6886e42b17e5dd2ff089" />
+      <Content Include="Oppgave315G\.git\objects\f1\18689cac8c42190297076f8cae52da92bc4b36" />
+      <Content Include="Oppgave315G\.git\objects\f9\89ae5ce0783227e302c485e98b1e16b8e6e299" />
+      <Content Include="Oppgave315G\.git\refs\heads\main" />
+      <Content Include="Oppgave315G\.git\refs\remotes\origin\HEAD" />
+      <Content Include="Oppgave315G\.git\refs\remotes\origin\main" />
+      <Content Include="Oppgave315G\.idea\.idea.Oppgave315G\.idea\.gitignore" />
+      <Content Include="Oppgave315G\.idea\.idea.Oppgave315G\.idea\aws.xml" />
+      <Content Include="Oppgave315G\.idea\.idea.Oppgave315G\.idea\indexLayout.xml" />
+      <Content Include="Oppgave315G\.idea\.idea.Oppgave315G\.idea\projectSettingsUpdater.xml" />
+      <Content Include="Oppgave315G\.idea\.idea.Oppgave315G\.idea\vcs.xml" />
+      <Content Include="Oppgave315G\.idea\.idea.Oppgave315G\.idea\workspace.xml" />
+      <Content Include="Oppgave315G\Oppgave315G.sln" />
+      <Content Include="Oppgave315G\Oppgave315G\bin\Debug\net8.0\Oppgave315G" />
+      <Content Include="Oppgave315G\Oppgave315G\bin\Debug\net8.0\Oppgave315G.deps.json" />
+      <Content Include="Oppgave315G\Oppgave315G\bin\Debug\net8.0\Oppgave315G.dll" />
+      <Content Include="Oppgave315G\Oppgave315G\bin\Debug\net8.0\Oppgave315G.pdb" />
+      <Content Include="Oppgave315G\Oppgave315G\bin\Debug\net8.0\Oppgave315G.runtimeconfig.json" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\apphost" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.AssemblyInfoInputs.cache" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.assets.cache" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.csproj.CoreCompileInputs.cache" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.csproj.FileListAbsolute.txt" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.dll" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.GeneratedMSBuildEditorConfig.editorconfig" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.genruntimeconfig.cache" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\Oppgave315G.pdb" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\refint\Oppgave315G.dll" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Debug\net8.0\ref\Oppgave315G.dll" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Oppgave315G.csproj.nuget.dgspec.json" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Oppgave315G.csproj.nuget.g.props" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\Oppgave315G.csproj.nuget.g.targets" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\project.assets.json" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\project.nuget.cache" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\project.packagespec.json" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\rider.project.model.nuget.info" />
+      <Content Include="Oppgave315G\Oppgave315G\obj\rider.project.restore.info" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Oppgave315G\.git\objects\info\" />
+      <Folder Include="Oppgave315G\.git\objects\pack\" />
+      <Folder Include="Oppgave315G\.git\refs\tags\" />
+    </ItemGroup>
+
 </Project>
