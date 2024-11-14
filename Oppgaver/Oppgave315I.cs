@@ -14,21 +14,17 @@ public class Oppgave315I
     {
         const int size = 14;
         string result = "";
-        var lowerCase = WriteRandomLowerCaseLetter(1);
-        var upperCase = WriteRandomUpperCaseLetter(1);
-        var digit = WriteRandomDigit(1);
-        var spesChar = WriteRandomSpecialCharacter(1);
         for (int i = 0; i < size; i++)
         {
             int generateChar = _random.Next(4);
             if (generateChar == 0)
-                result += lowerCase;
+                result +=  WriteRandomLowerCaseLetter(1);
             else if (generateChar == 1)
-                result += upperCase;
+                result +=  WriteRandomUpperCaseLetter(1);
             else if (generateChar == 2)
-                result += digit;
+                result += WriteRandomDigit(1);
             else if (generateChar == 3)
-                result += spesChar;
+                result += WriteRandomSpecialCharacter(1);
         }
 
         return result;
