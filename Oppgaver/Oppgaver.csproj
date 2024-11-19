@@ -19,4 +19,11 @@
       <None Remove="Oppgave315G\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="ordliste.txt" />
+      <Content Include="ordliste.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
