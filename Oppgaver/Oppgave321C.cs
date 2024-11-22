@@ -2,35 +2,44 @@ namespace Oppgaver;
 
 public class Oppgave321C
 {
-    public class CoinCounts
+    public class Coin
     {
-        public int Count;
-        public int Value;
+        public int Count { get; set; }
+        public int Value { get; set; }
+        public class CoinCounts
+        {
+            public int Count;
+            public int Value;
+        }
+
+        public int TotalValue()
+        {
+            return Count * Value;
+        }
     }
 
     public void Run()
     {
         Console.WriteLine("Oppgave321C");
-        var coins = new List<CoinCounts>
+        var coins = new List<Coin>
         {
-            new CoinCounts { Count = 7, Value = 1 },
-            new CoinCounts { Count = 3, Value = 5 },
-            new CoinCounts { Count = 2, Value = 10 },
-            new CoinCounts { Count = 10, Value = 11 }
+            new Coin { Count = 7, Value = 1 },
+            new Coin { Count = 3, Value = 5 },
+            new Coin { Count = 2, Value = 10 },
+            new Coin { Count = 10, Value = 11 }
         };
 
         var total = CountTotal(coins);
         Console.WriteLine(total);
     }
-    
-    public int CountTotal(List<CoinCounts> coins)
+
+    public static int CountTotal(List<Coin> coins)
     {
         int total = 0;
         foreach (var coin in coins)
         {
-            total += coin.Value * coin.Count;
+            total += coin.TotalValue();
         }
-        return total; 
+        return total;
     }
-    
 }
