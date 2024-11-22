@@ -4,13 +4,8 @@ public class Oppgave321C
 {
     public class Coin
     {
-        public int Count { get; set; }
-        public int Value { get; set; }
-        public class CoinCounts
-        {
-            public int Count;
-            public int Value;
-        }
+        public int Count { get; internal set; }
+        public int Value { get; internal set; }
 
         public int TotalValue()
         {
