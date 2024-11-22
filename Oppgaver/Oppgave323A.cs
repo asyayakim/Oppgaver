@@ -22,10 +22,10 @@ public class Oppgave323A
             string? command = Console.ReadLine();
             match.GoalsVerdict(command);
             
-            Console.WriteLine($"Stillingen er {match.HomeGoals}-{match.AwayGoals}.");
+            Console.WriteLine($"Stillingen er {match.Result()}.");
         }
 
-        var result = match.Result();
+        var result = match.CheckBet();
         var isBetCorrect = bet != null && bet.Contains(result);
         var isBetCorrectText = isBetCorrect ? "riktig" : "feil";
         Console.WriteLine($"Du tippet {isBetCorrectText}");
@@ -59,10 +59,14 @@ public class Oppgave323A
             
         }
 
-        public string Result()
+        public string CheckBet()
         {
             string s = HomeGoals == AwayGoals ? "U" : HomeGoals > AwayGoals ? "H" : "B";
-            return s;
+            return s; 
+        }
+        public string Result()
+        {
+            return HomeGoals+ "-" + AwayGoals;
         }
     }
 }
