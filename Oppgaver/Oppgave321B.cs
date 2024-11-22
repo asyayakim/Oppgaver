@@ -1,6 +1,6 @@
 namespace Oppgaver
 {
-    class Oppgave321B
+    internal class Oppgave321B
     {
         public class Employee
         {

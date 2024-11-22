@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 
 public class Oppgave315I
 {
-    readonly Random _random = new Random();
+    private readonly Random _random = new Random();
 
     public void Run()
     {

@@ -53,7 +53,7 @@ public class Oppgave316A
         return lastPartOfFirstWord == firstPartOfSecondWord;
     }
 
-    static string[] GetWords()
+    private static string[] GetWords()
     {
         var lastWord = string.Empty;
         var filePath = "/Users/asyayakimova/RiderProjects/Oppgaver/Oppgaver/ordliste.txt";
