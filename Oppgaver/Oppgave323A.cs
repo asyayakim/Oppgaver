@@ -10,7 +10,7 @@ public class Oppgave323A
                       " - helgardering: HUB\n" + 
                       "Hva har du tippet for denne kampen? ");
         var bet = Console.ReadLine();
-        var match = new Match();
+        var match = new Match(bet);
        
         while (match.MatchIsRunning)
         {
@@ -35,15 +35,14 @@ public class Oppgave323A
     {
         public int HomeGoals { get; set; }
         public int AwayGoals { get; set; }
+        private readonly string? _bet;
         public bool MatchIsRunning { get; set; }
 
-        public Match()
+        public Match(string? bet)
         {
-            HomeGoals = 0;
-            AwayGoals = 0;
+            _bet = bet;
             MatchIsRunning = true;
         }
-
         public void GoalsVerdict(string? command)
         {
             if (command == "H") HomeGoals++;
@@ -56,7 +55,6 @@ public class Oppgave323A
             {
                 Console.WriteLine("Not a valid command");
             }
-            
         }
 
         public string CheckBet()
