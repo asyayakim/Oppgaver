@@ -17,20 +17,31 @@ public class Oppgave323C
             else
                 Console.WriteLine("Player 2 Turn");
             string? choice = Console.ReadLine();
-            if (gameConsole.Grid.Contains(choice) && choice!= "X" && choice != "O")
+            if (int.TryParse(choice, out int gridIndex) && gridIndex>= 1 
+                                                        && gridIndex <= 9
+                                                        && gameConsole.Grid[gridIndex -1]!= "X"
+                                                        && gameConsole.Grid[gridIndex - 1] != "O")
             {
-                int gridIndex = Convert.ToInt32(choice) - 1;
- 
-                if (player1Turn)
-                    gameConsole.Grid[gridIndex] = "X";
-                else
-                    gameConsole.Grid[gridIndex] = "O";
+                gridIndex--;
+                gameConsole.Grid[gridIndex] =  player1Turn ? "O" : "X";
                 numTurns++;
-                Console.WriteLine(numTurns);
+                player1Turn = !player1Turn;
+                Console.WriteLine($"Turn :{numTurns}");
             }
-            player1Turn = !player1Turn;
+            else
+            {
+                Console.WriteLine("Invalid Input");
+            }
         }
         gameConsole.Show();
+        if (gameConsole.CheckVictory())
+        {
+            Console.WriteLine("You Win!");
+        }
+        else
+        {
+            Console.WriteLine("It is a draw!");
+        }
     }
 
     class GameConsole
@@ -67,11 +78,11 @@ public class Oppgave323C
             bool row2 = Grid[3] == Grid[4] && Grid[4] == Grid[5];
             bool row3 = Grid[6] == Grid[7] && Grid[7] == Grid[8];
             bool col1 = Grid[0] == Grid[3] && Grid[3] == Grid[6];
-            bool col2 = Grid[1] == Grid[4] && Grid[4] == Grid[7]; 
+            bool col2 = Grid[1] == Grid[4] && Grid[4] == Grid[7];
             bool col3 = Grid[2] == Grid[5] && Grid[5] == Grid[8];
             bool diagDown = Grid[0] == Grid[4] && Grid[4] == Grid[8];
             bool diagUp = Grid[6] == Grid[4] && Grid[4] == Grid[2];
- 
+
             return row1 || row2 || row3 || col1 || col2 || col3 || diagDown || diagUp;
         }
     }
