@@ -12,8 +12,9 @@ namespace Oppgaver
             var account1 = bankAccount.RegisterNewAccount("John Doe", "123 Street Name", 123456789, 1000);
             var account2 = bankAccount.RegisterNewAccount("Jane Doe", "456 Street Name", 987654321, 500);
 
-            // bankAccount.TransferMoney(account1, account2, 500);
-            Console.WriteLine("Bank operation");
+            bankAccount.TransferMoney(account1, account2, 500);
+            Console.WriteLine($"Balanse on account1 {account1.Money} or account2 {account2.Money}");
+            Console.WriteLine("Bank operation completed!");
 
         }
 
@@ -39,8 +40,9 @@ namespace Oppgaver
                public string NameOf { get; }
                public string Address { get; }
                public int Phone { get; }
-               public int Money { get; }
-                public Account(string nameOf, string address, int phone, int money)
+               public int Money { get; set; }
+
+               public Account(string nameOf, string address, int phone, int money)
                 {
                     NameOf = nameOf;
                     Address = address;
@@ -49,10 +51,11 @@ namespace Oppgaver
                 }
             }
 
-            // public object CloseYourAccount(string nameOf, string address, int phone, int money)
-            // {
-            //    
-            // }
+            public void TransferMoney(Account account1, Account account2, int i)
+            {
+               account1.Money -= i;
+               account2.Money += i;
+            }
         }
     }
 }
