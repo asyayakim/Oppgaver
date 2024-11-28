@@ -20,9 +20,12 @@ namespace Oppgaver
                 Console.WriteLine("Press 3 to close your account");
                 Console.WriteLine("Press 4 to exit");
                 var command = Console.ReadKey();
-                bankAccount.HandleCommsand(command, account1, account2);
+                if (!bankAccount.HandleCommand(command, account1, account2))
+                {
+                    Console.WriteLine("Goodbye!");
+                    break;
+                }
             }
-            // ReSharper disable once FunctionNeverReturns
         }
 
         public class BankUserAccount
@@ -34,12 +37,6 @@ namespace Oppgaver
             {
                 this._name = name;
                 _accounts = new List<Account>();
-            }
-
-            public BankUserAccount(List<Account> accounts, string name)
-            {
-                _accounts = accounts;
-                _name = name;
             }
 
             public Account RegisterNewAccount(string? nameOf, string? address, int phone, int money)
@@ -76,10 +73,8 @@ namespace Oppgaver
                 account2.Money -= i;
             }
 
-            public void HandleCommsand(ConsoleKeyInfo cmdKey, Account account1, Account account2)
+            public bool HandleCommand(ConsoleKeyInfo cmdKey, Account account1, Account account2)
             {
-                while (cmdKey.Key != ConsoleKey.Escape)
-                {
                     if (cmdKey.KeyChar == '1')
                     {
                         Console.Clear();
@@ -93,20 +88,17 @@ namespace Oppgaver
                         if (!int.TryParse(Console.ReadLine(), out int phone))
                         {
                             Console.WriteLine("Invalid phone number. Operation canceled.");
-                            return;
                         }
 
                         Console.Write("Enter Money: ");
                         if (!int.TryParse(Console.ReadLine(), out int money))
                         {
                             Console.WriteLine("Invalid money number. Operation canceled.");
-                            return;
                         }
 
                         var newAccount = RegisterNewAccount(name, address, phone, money);
                         Console.WriteLine(
                             $"Account created successfully for {newAccount} with balance {newAccount.Money}!");
-                        return;
                     }
                     else if (cmdKey.KeyChar == '2')
                     {
@@ -121,7 +113,6 @@ namespace Oppgaver
                             var sum = Console.ReadLine();
                             if (sum != null) TransferMoney1(account1, account2, sum.Length);
                             Console.WriteLine($"Account balance Account1 {account1.Money} and Account2 {account2.Money}..");
-                            return;
                         }
                         else if (command.KeyChar == '2')
                         {
@@ -129,7 +120,6 @@ namespace Oppgaver
                             var sum = Console.ReadLine();
                             if (sum != null) TransferMoney2(account2, account1, sum.Length);
                             Console.WriteLine($"Account balance Account1 {account1.Money} and Account2 {account2.Money}..");
-                            return;
                         } 
                     }
                     else if (cmdKey.KeyChar == '3')
@@ -165,11 +155,12 @@ namespace Oppgaver
                             Console.WriteLine("Invalid input. No account deleted.");
                         }
                     }
-                    else
+                    else if (cmdKey.KeyChar == '4')
                     {
-                        break;
+                        return false;
                     }
-                }
+                    Console.WriteLine("\nInvalid input. Press any key to continue...");
+                    return true;
             }
 
             private bool DeleteAccount(Account account)
