@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Oppgaver;
+using Oppgaver.ClassStructure;
+
 // var oppgave315G = new Oppgave315G();
 // oppgave315G.Run();
 // var oppgave315C = new Oppgave315C();
@@ -27,5 +28,14 @@ using Oppgaver;
 // oppgave323C.Run();
 // var oppgave329A = new Oppgave329A();
 // Oppgave329A.Run();
-var oppgave330A = new Oppgave330A();
-Oppgave330A.Run();
+// var oppgave330A = new Oppgave330A();
+// Oppgave330A.Run();
+namespace Oppgaver;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Oppgave330B.Run();
+    }
+}
