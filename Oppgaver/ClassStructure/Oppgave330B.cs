@@ -16,9 +16,5 @@ public class Oppgave330B
         school.PrintRooms();
 
         Console.WriteLine($"Students: {students}");
-       
-        
     }
-
-   
 }

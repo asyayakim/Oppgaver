@@ -32,10 +32,17 @@ using Oppgaver.ClassStructure;
 // Oppgave330A.Run();
 namespace Oppgaver;
 
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Oppgave330B.Run();
+//     }
+// }
 public class Program
 {
     public static void Main(string[] args)
     {
-        Oppgave330B.Run();
+        Oppgave330C.Oppgave330C.Run();
     }
 }
