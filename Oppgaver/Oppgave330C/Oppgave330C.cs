@@ -6,13 +6,21 @@ namespace Oppgaver.Oppgave330C
         {
             Console.WriteLine("Oppgave330C");
             var machineAutomat = new MachineAutomat();
-            //var product = machineAutomat.CreateProduct("ProductName", 25, 10);
-            //var customer = machineAutomat.CreateCustomer("CustomerName", 50);
-            machineAutomat.PrintProducts();
-            //machineAutomat.BuyUnit();
-            Console.WriteLine("What do you want to buy?");
-            int buyProduct = Convert.ToInt32(Console.ReadLine());
-            machineAutomat.PaymentProceass(buyProduct);
+            while (true)
+            {
+                Console.WriteLine("Available Products:");
+                machineAutomat.PrintProducts();
+                Console.WriteLine("What do you want to buy?");
+                int buyProduct = Convert.ToInt32(Console.ReadLine());
+                machineAutomat.PaymentProceass(buyProduct);
+                Console.WriteLine("Do you want to buy another product? Press 1 to exit or any other key to continue.");
+                var exitInput = Console.ReadLine();
+                if (exitInput == "1")
+                {
+                    Console.WriteLine("Goodbye!");
+                    break;
+                }
+            }
         }
     }
 }
