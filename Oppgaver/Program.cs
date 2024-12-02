@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Oppgaver.ClassStructure;
-
 // var oppgave315G = new Oppgave315G();
 // oppgave315G.Run();
 // var oppgave315C = new Oppgave315C();
