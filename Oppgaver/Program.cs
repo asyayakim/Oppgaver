@@ -37,10 +37,18 @@ namespace Oppgaver;
 //         Oppgave330B.Run();
 //     }
 // }
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Oppgave330C.Oppgave330C.Run();
+//     }
+// }
 public class Program
 {
     public static void Main(string[] args)
     {
-        Oppgave330C.Oppgave330C.Run();
+        var game = new Oppgaver.Oppgave341B.Game();
+        game.Run();
     }
 }
