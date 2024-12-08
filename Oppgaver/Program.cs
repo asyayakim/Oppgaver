@@ -44,11 +44,11 @@ namespace Oppgaver;
 //         Oppgave330C.Oppgave330C.Run();
 //     }
 // }
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        var game = new Oppgaver.Oppgave341B.Game();
-        game.Run();
-    }
-}
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         var game = new Oppgaver.Oppgave341B.Game();
+//         game.Run();
+//     }
+// }
