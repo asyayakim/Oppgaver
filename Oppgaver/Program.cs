@@ -28,7 +28,7 @@
 // Oppgave329A.Run();
 // var oppgave330A = new Oppgave330A();
 // Oppgave330A.Run();
-namespace Oppgaver;
+//namespace Oppgaver;
 
 // public class Program
 // {
