@@ -1,12 +1,30 @@
 namespace Oppgaver.CarApp
 {
-    public class Plain(string registrationNumber, string kw, string speed, string color, string type)
+    public class Plain : Vehicles, IVehicles
     {
-        public string RegistrationNumber { get; }
-        public string Kw { get; }
-        public string Speed { get; }
-        public string Color { get; }
-        public string Type { get; }
+        public Plain(string registrationNumber, string kw, string speed, string color,string weight, string type) : base(
+            registrationNumber, kw, speed, color, type)
+        {
+            Weight = weight;
+        }
+
+        public string Weight { get; }
+
+        public override string PrintVehicles()
+        {
+            return $"Plane - {RegistrationNumber}, {Kw}, {Speed}, {Color},{Weight}, {Type}";
+        }
+
+
+        public override void Fly()
+        {
+            Console.WriteLine($"Flyight with RegistrationNumber {RegistrationNumber} is flying!"); 
+        }
+
+        public override void Drive()
+        {
+            return;
+        }
     }
 }
 

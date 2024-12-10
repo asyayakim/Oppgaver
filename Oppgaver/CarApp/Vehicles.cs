@@ -1,32 +1,39 @@
 namespace Oppgaver.CarApp
 {
-    internal class Cars(string RegistrationNumber, string kw, string speed, string color, string type)
+    public class Vehicles : IVehicles
     {
+        private string _registrationNumber;
+
+        public Vehicles(string registrationNumber, string kw, string speed, string color, string type)
+        {
+            RegistrationNumber = registrationNumber;
+            Kw = kw;
+            Speed = speed;
+            Color = color;
+            Type = type;
+        }
+
         public string RegistrationNumber { get; }
         public string Kw { get; }
         public string Speed { get; }
         public string Color { get; }
         public string Type { get; }
 
-        public static void AreCarsTheSame(List<Cars> vehiclesList)
+        public virtual string PrintVehicles()
         {
-            if (vehiclesList.Count == 0)
-            {
-                return;
-            }
-            var car1 = vehiclesList[0];
-            var car2 = vehiclesList[1];
-            if (car1.RegistrationNumber != car2.RegistrationNumber
-                || car1.Kw != car2.Kw ||
-                car1.Speed != car2.Speed ||
-                car1.Color != car2.Color
-                || car1.Type != car2.Type)
-            {
-                Console.WriteLine("Cars are not the same");
-            }
+            return $"Vehicle - {RegistrationNumber}, {Kw}, {Speed}, {Color}, {Type}";
+        }
 
+        public virtual void Fly()
+        {
+            Console.WriteLine("Flying vehicle");
+        }
+
+        public virtual void Drive()
+        {
+            Console.WriteLine("Driving vehicle");
         }
     }
     
-   
 }
+
