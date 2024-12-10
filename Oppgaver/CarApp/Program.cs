@@ -8,7 +8,8 @@ public class Program
         {
             new Cars("NF123456", "147kw", "200km/t", "green", "lett kjøretøy"),
             new Cars("NF654321", "150kw", "195km/t", "blue", "lett kjøretøy"),
-            new Plain("LN1234", "1000kw", "30m", "2tonn", "10tonn", "jetfly")
+            new Plain("LN1234", "1000kw", "30m", "2tonn", "10tonn", "jetfly"),
+            new Boat("ABC123", "100kw", "30knop", "500kg", "boat"),
         };
         foreach (var transport in vehiclesList)
         {
