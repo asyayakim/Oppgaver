@@ -23,4 +23,12 @@
       <None Remove="ordliste.txt" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ConsoleStarsTilOppgaveInterface-main\Properties\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="RandomShapes-2\RandomShapes.sln" />
+    </ItemGroup>
+
 </Project>
