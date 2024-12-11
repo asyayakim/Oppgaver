@@ -12,8 +12,14 @@ public class Program
         // Console.WriteLine($"Total vowels: {analyzer.CountVowels()}");
         // Console.WriteLine($"Is palindrome: {analyzer.IsPalindrome()}");
         // Console.WriteLine($"Change symbols: {analyzer.ChangeSymbols()}");
-        Random random = new Random();
-        Numbers numbers = new Numbers(random);
-        numbers.CreateFunction();
+        // Random random = new Random();
+        // Numbers numbers = new Numbers(random);
+        // numbers.CreateFunction();
+        int[] array = {1,23,2343,433, 656,67,457};
+        ArrayCount numbers = new ArrayCount();
+        Console.WriteLine(numbers.BiggestNumber(array));
+        Console.WriteLine(numbers.SmallesrNumber(array));
+        Console.WriteLine(numbers.ReverseNumber(array));
+        Console.WriteLine(numbers.Sum(array));
     }
 }
