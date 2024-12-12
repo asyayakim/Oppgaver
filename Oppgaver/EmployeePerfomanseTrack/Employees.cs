@@ -8,7 +8,7 @@ namespace Oppgaver.EmployeePerfomanseTrack
             Id = id;
         }
 
-        public static string Id { get; set; }
+        public string Id { get; set; }
 
         public string Name { get; set; }
     }
