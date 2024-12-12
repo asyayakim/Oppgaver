@@ -8,19 +8,8 @@ namespace Oppgaver.EmployeePerfomanseTrack
             Id = id;
         }
 
-        public string Id { get; set; }
+        public static string Id { get; set; }
 
         public string Name { get; set; }
-    }
-    internal partial record PerformanceTracker
-    {
-        public void RecordScore(Employees employee)
-        {
-        }
-
-        public void RecordScore(string employee, int i, DateTime dateTime)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
