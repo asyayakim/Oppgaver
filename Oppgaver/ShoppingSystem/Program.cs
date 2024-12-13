@@ -20,20 +20,16 @@ namespace Oppgaver.ShoppingSystem
             }
             Console.WriteLine("---------------");
             shoppingCart.AddProduct(products[0]);
-            shoppingCart.RemoveProduct(products[1]);
+            shoppingCart.RemoveProduct(products[0]);
             shoppingCart.DisplayProductsInTheCart(products);
             Console.WriteLine("---------------");
             foreach (var product in products)
             {
                 Console.WriteLine(product.PrintInfo());
             }
-
-
-           // shoppingCart.CountTotalPriceInTheCart(products);
-            // foreach (var VARIABLE in shoppingCart)
-            // {
-            //     
-            // }
+            Console.WriteLine("---------------");
+           Console.WriteLine("Total - " + shoppingCart.CountTotalPriceInTheCart());
+          
         }
     }
 }

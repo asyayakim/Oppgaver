@@ -13,6 +13,7 @@ namespace Oppgaver.ShoppingSystem
         
         public void AddProduct(Products product)
         {
+            //check if product exist
             _products.Add(new Products(product.Name, product.RegisterNumber, product.Price, 1));
            
             FixQuantotyInStock(product);
@@ -25,7 +26,15 @@ namespace Oppgaver.ShoppingSystem
 
         public void RemoveProduct(Products product)
         {
-            _products.Remove(product);
+            var productToRemove = _products.FirstOrDefault(p => p.Name == product.Name);
+            if (productToRemove.Quantity > 1)
+            {
+                productToRemove.Quantity -= 1;
+            }
+            else
+            {
+                _products.Remove(productToRemove);
+            }
         }
 
         public void DisplayProductsInTheCart(List<Products> products)
@@ -34,6 +43,11 @@ namespace Oppgaver.ShoppingSystem
                                                            $"{product.RegisterNumber}, Price: {product.Price}," +
                                                            $" Quantity: {product.Quantity}"));
         }
-       
+
+        public decimal CountTotalPriceInTheCart()
+        {
+            var totalPrice = _products.Sum(product => product.Price);
+            return totalPrice;
+        }
     }
 }
