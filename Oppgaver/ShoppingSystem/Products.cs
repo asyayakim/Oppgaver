@@ -14,7 +14,7 @@ namespace Oppgaver.ShoppingSystem
         public string Name { get; }
         public string RegisterNumber { get; }
         public decimal Price { get; }
-        public int Quantity { get; }
+        public int Quantity { get; set; }
 
         public virtual string PrintInfo()
         {

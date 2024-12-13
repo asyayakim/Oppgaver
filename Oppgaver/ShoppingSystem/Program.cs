@@ -18,9 +18,22 @@ namespace Oppgaver.ShoppingSystem
             {
                 Console.WriteLine(product.PrintInfo());
             }
-
+            Console.WriteLine("---------------");
             shoppingCart.AddProduct(products[0]);
             shoppingCart.RemoveProduct(products[1]);
+            shoppingCart.DisplayProductsInTheCart(products);
+            Console.WriteLine("---------------");
+            foreach (var product in products)
+            {
+                Console.WriteLine(product.PrintInfo());
+            }
+
+
+           // shoppingCart.CountTotalPriceInTheCart(products);
+            // foreach (var VARIABLE in shoppingCart)
+            // {
+            //     
+            // }
         }
     }
 }
