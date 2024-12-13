@@ -9,5 +9,9 @@ namespace Oppgaver.ShoppingSystem
         }
 
         public int WarantyDuration { get; }
+        public override string PrintInfo()
+        {
+            return $"Name: {Name}, RegisterNumber: {RegisterNumber}, Price: {Price}, Quantity: {Quantity}, WarantyDuration: {WarantyDuration}";
+        }
     }
 }

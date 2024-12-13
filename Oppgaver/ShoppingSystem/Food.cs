@@ -20,5 +20,9 @@ namespace Oppgaver.ShoppingSystem
                 Console.WriteLine("Food ok");
             }
         }
+        public override string PrintInfo()
+        {
+            return $"Name: {Name}, RegisterNumber: {RegisterNumber}, Price: {Price}, Quantity: {Quantity}, ExpiratonDateTime: {ExpiratonDateTime}";
+        }
     }
 }

@@ -1,7 +1,7 @@
 namespace Oppgaver.ShoppingSystem
 {
 
-    public class Products
+    public class Products : IProducts
     {
         public Products(string name, string registerNumber, decimal price, int quantity)
         {
@@ -15,10 +15,10 @@ namespace Oppgaver.ShoppingSystem
         public string RegisterNumber { get; }
         public decimal Price { get; }
         public int Quantity { get; }
-        
-        public string PrintInfo(Products product)
+
+        public virtual string PrintInfo()
         {
-            return $"Name: {product.Name}, RegisterNumber: {product.RegisterNumber}, Price: {product.Price}, Quantity: {product.Quantity}";
+            return $"Name: {Name}, RegisterNumber: {RegisterNumber}, Price: {Price}, Quantity: {Quantity}";
         }
     }
 }

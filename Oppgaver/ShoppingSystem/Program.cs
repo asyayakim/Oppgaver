@@ -13,12 +13,14 @@ namespace Oppgaver.ShoppingSystem
                 new Food("Apple", "F112233", 3.50m, 100, new DateTime(2024, 12, 31)),
                 new Food("Milk", "F445566", 15.99m, 30, new DateTime(2024, 12, 15))
             };
+            var shoppingCart = new ShoppingCart();
             foreach (var product in products)
             {
-                Console.WriteLine(product.PrintInfo(product));
+                Console.WriteLine(product.PrintInfo());
             }
-            
 
+            shoppingCart.AddProduct(products[0]);
+            shoppingCart.RemoveProduct(products[1]);
         }
     }
 }
