@@ -5,6 +5,7 @@ namespace Oppgaver.ShoppingSystem
     public class ShoppingCart
     {
         private readonly List<Products> _products;
+        
         public ShoppingCart()
         {
             _products = new List<Products>();
@@ -13,7 +14,6 @@ namespace Oppgaver.ShoppingSystem
         
         public void AddProduct(Products product)
         {
-            //check if product exist
             _products.Add(new Products(product.Name, product.RegisterNumber, product.Price, 1));
            
             FixQuantotyInStock(product);
