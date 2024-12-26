@@ -4,6 +4,7 @@ namespace Oppgaver.TestProject
 {
     public class StudentInClass
     {
+        private List<StudentInClass> _students;
         private string _name { get; set; }
         private int _id { get; set; }
         private int _age { get; set; }
@@ -20,10 +21,10 @@ namespace Oppgaver.TestProject
             Console.WriteLine($"Name: {_name}, Age: {_age}, Id: {_id}");
         }
 
-        public void FindYoungest(List<StudentInClass> students)
+        public void FindYoungest()
         {
-            var youngest = students[0];
-            foreach (var student in students)
+            var youngest = _students[0];
+            foreach (var student in _students)
             {
                 if (student._age < youngest._age)
                 {

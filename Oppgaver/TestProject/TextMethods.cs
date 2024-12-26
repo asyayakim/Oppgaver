@@ -64,7 +64,7 @@ namespace Oppgaver.TestProject
 
         public string IsPalindrome()
         {
-            bool isPalindrome = _text.Reverse() == _text;
+            bool isPalindrome = (string)_text.Reverse() == _text;
             return isPalindrome.ToString();
         }
 
